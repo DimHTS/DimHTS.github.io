@@ -22,7 +22,7 @@
     // the correct url will be waiting in the browser's history for
     // the single page app to route accordingly.
     (function(l) {
-      alert(l)
+      console.log('Dim1: ' + window.history)
       if (l.search) {
         var q = {};
         l.search.slice(1).split('&').forEach(function(v) {
@@ -35,6 +35,7 @@
             (q.q ? ('?' + q.q) : '') +
             l.hash
           );
+      console.log('Dim1: ' + window.history)
         }
       }
     }(window.location))
