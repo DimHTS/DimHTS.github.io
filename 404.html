@@ -36,9 +36,14 @@
 //     );
     
       window.location = 'https://dimhts.github.io/react/admin_redux/'
-      window.location.href = 'https://dimhts.github.io/react/admin_redux/news'
     
-    alert(3)
+    setTimeout(function() { 
+      document.getElementsByTagName('body')[0].innerHTML += '<a href="https://dimhts.github.io/react/admin_redux/news/" id="link">fewe</a>';
+      document.getElementById("link").click()
+    }, 2000);
+    
+    
+    alert(1)
     
   </script>
 </head>
